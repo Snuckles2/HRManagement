@@ -1,0 +1,59 @@
+@page
+@model HRManagement.Pages.Employees.CreateModel
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h1>Create Employee</h1>
+
+<form method="post" class="needs-validation" novalidate>
+    <div class="mb-3">
+        <label asp-for="Employee.FirstName" class="form-label"></label>
+        <input asp-for="Employee.FirstName" class="form-control" required />
+        <div class="invalid-feedback">
+            Please enter the first name.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Employee.LastName" class="form-label"></label>
+        <input asp-for="Employee.LastName" class="form-control" required />
+        <div class="invalid-feedback">
+            Please enter the last name.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Employee.Position" class="form-label"></label>
+        <input asp-for="Employee.Position" class="form-control" required />
+        <div class="invalid-feedback">
+            Please enter the position.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Employee.Salary" class="form-label"></label>
+        <input asp-for="Employee.Salary" class="form-control" required />
+        <div class="invalid-feedback">
+            Please enter the salary.
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+@section Scripts {
+    <script>
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+}

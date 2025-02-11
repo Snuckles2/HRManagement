@@ -1,0 +1,11 @@
+[
+    { "EmployeeId": 1, "Date": "2023-10-01T00:00:00", "HoursWorked": 8 },
+    { "EmployeeId": 1, "Date": "2023-10-02T00:00:00", "HoursWorked": 9 },
+    { "EmployeeId": 1, "Date": "2023-10-03T00:00:00", "HoursWorked": 7 },
+    { "EmployeeId": 2, "Date": "2023-10-01T00:00:00", "HoursWorked": 8 },
+    { "EmployeeId": 2, "Date": "2023-10-02T00:00:00", "HoursWorked": 8 },
+    { "EmployeeId": 2, "Date": "2023-10-03T00:00:00", "HoursWorked": 8 },
+    { "EmployeeId": 3, "Date": "2023-10-01T00:00:00", "HoursWorked": 6 },
+    { "EmployeeId": 3, "Date": "2023-10-02T00:00:00", "HoursWorked": 7 },
+    { "EmployeeId": 3, "Date": "2023-10-03T00:00:00", "HoursWorked": 8 }
+]
